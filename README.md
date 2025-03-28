@@ -1,2 +1,2 @@
 # pgen
-Commandline based password generator
+A simple commandline based password generator for accounts.
