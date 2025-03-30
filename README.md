@@ -1,8 +1,7 @@
 # pgen
 A simple commandline based password generator for accounts. This 
 program leverages Mersenne primes to generate safe and secure passwords for use.  
-Mersenne prime of 127 is used here to calculate the hash that will aid in creating a 
-secure password.  
+Mersenne primes are chosen here to speed up computation.  
 
 ### Requirements  
 rustc 1.85.1  
@@ -20,4 +19,4 @@ target/release/main to generate our password as:
 `$ ./target/release/main --seed <ENTER_SEED_PHRASE_HERE>`  
 example:  
 `$ ./target/release/main --seed myexampleseed`  
-`$ myexampleseed: Rj5ndUcmV1cxbUy`  
+`$ myexampleseed: Rj5ndUcmV1cxbUY*`  
