@@ -1,4 +1,10 @@
 //! PASSWORD GENERATOR
+///
+///To generate the password, seed provided 
+///is first passed to the hash function to produce its 
+///mersenne hash.
+///Alongside characters in the seed, the mersenne hash is used 
+///to generate password.
 use anyhow::{bail, Error, Result};
 use base64::{ engine::general_purpose, Engine as _};
 use hash::mersnhash::mersn_hash;

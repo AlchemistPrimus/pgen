@@ -1,13 +1,10 @@
 //! MAIN FILE
 //! This is a password generator for any account.
+/// Retrives and parses user input to generate a safe and 
+/// secure password.
 use anyhow::{bail, Result};
 use clap::Parser;
 use encryptor::passwd::gen_passwd;
-
-const USAGE: &str = "
-USAGE:
-    pgen --seed <SEED>
-";
 
 #[derive(Parser, Debug)]
 #[clap(version, about, long_about=None)]
